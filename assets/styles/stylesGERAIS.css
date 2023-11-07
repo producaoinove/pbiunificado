@@ -1,0 +1,74 @@
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+div {
+    display: none;
+}
+
+#nome {
+    margin-left: 1%;
+    /* background-color: yellowgreen; */
+}
+
+a.privado {
+    background-color: yellow;
+}
+
+li {
+    list-style: none;
+}
+
+a.atual {
+    background-color: green;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a.naoatual:hover {
+    background-color: brown;
+    color: aqua;
+}
+
+#historicoextracaoRFB {
+    background-color: white;
+    color: black;
+}
+
+#novaextracaoRFB {
+    background-color: black;
+    color: white;
+}
+
+#extracaomaisrecenteRFB {
+    background-color: black;
+    color: white;
+}
+
+#tratar_bkl {
+    background-color: black;
+    color: white;
+}
+
+#temaBtn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#temaBtn img {
+    width: 60px;
+    height: 60px;
+}
+
+.texto {
+    margin-left: 100px;
+}
