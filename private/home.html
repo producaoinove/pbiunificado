@@ -19,7 +19,6 @@
                 <a onclick="mostrarDiv('rse')" id="rse" class="naoatual" style="margin-left: 6px;" title="IR PRA DFV RSE" href="#"> DFV RSE </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a onclick="mostrarDiv('rnn')" id="rnn" class="naoatual" title="IR PRA DFV RNN" href="#"> DFV RNN </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a onclick="mostrarDiv('rcs')"  id="rcs" class="naoatual" title="IR PRA DFV RCS" href="#"> DFV RCS </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a onclick="mostrarDiv('codLOGRADOURO')"  id="codLOGRADOURO" class="naoatual" title="IR PRA COD_LOGRADOURO" href="#"> DFV COD_LOGRADOURO </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a onclick="mostrarDiv('ofertas')"  id="ofertas" class="naoatual" title="IR PRA OFERTAS" href="#"> OFERTAS </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a onclick="mostrarDiv('listaTELEFONICA')"  id="listaTELEFONICA" class="naoatual" title="IR PRA LISTA TELEFÔNICA" href="#"> LISTA TELEFÔNICA </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a onclick="mostrarDiv('infoMEI')"  id="infoMEI" class="naoatual" title="IR PRA INFORMAÇÃO MEI" href="#"> INFO MEI </a> <br>
@@ -33,7 +32,6 @@
                 <p class="texto">DFV RSE >> verificar viabilidade para a regional RSE (ES, MG, RJ, SP)</p> <br>
                 <p class="texto">DFV RNN >> verificar viabilidade para a regional RNN (AL, AM, AP, BA, CE, MA, PA, PB, PE, PI, RN, RR, SE)</p> <br>
                 <p class="texto">DFV RCS >> verificar viabilidade para a regional RCS (AC, DF, GO, MS, MT, RO, TO)</p> <br> 
-                <p class="texto">DFV COD_LOGRADOURO >> verificar os endereços que estão viáveis e seus respectivos COD_LOGRADOURO</p> <br>
                 <p class="texto">OFERTAS >> ofertas correntes em cada UF e Municipio </p> <br>
                 <p class="texto">LISTA TELEFÔNICA >> puxar dados a partir do CNPJ, Razão Social ou Telefone</p> <br>
             </div>
@@ -56,12 +54,6 @@
                 Instrução: USER: "PARCEIRO" >> SENHA1: "6253" >> SENHA2: "7981" >> "Entrar"
                 </p>
                 <iframe title="dfv_rcs" src="https://app.powerbi.com/view?r=eyJrIjoiZDdkMzQ4MTYtYjJmNi00ZmEzLWI5M2QtZTQzYTEzMjU0OGM4IiwidCI6IjllN2M3ZGNmLTEwMmUtNDU4ZS05MTczLTk5OWFjYTU5NjRkNSJ9" id="dfv_rcs" width="100%" height="800px" frameborder="0" allowfullscreen="true"></iframe>
-            </div>
-            <div id="div_codLOGRADOURO">
-                <p>
-                Atual: DFV CODLOGRADOURO
-                </p>
-                <iframe title="dfv_codLOGRADOURO" src="https://app.powerbi.com/view?r=eyJrIjoiNTkzNTU0ZDItZDcwMS00ODdkLTg3NmMtZDM2ZTcwZmM5NWUzIiwidCI6ImI2MGFjM2UwLTczNGYtNDYwNC04ZmU4LTcwNWY0NGQzNDU4ZCJ9" id="dfv_codLOGRADOURO" width="100%" height="800px" frameborder="0" allowfullscreen="true"></iframe>
             </div>
             <div id="div_ofertas">
                 <p>
@@ -110,8 +102,8 @@
         if (login === "producao.inove") {
         const senha = prompt("Digite a senha:");
         if (senha === "Produc@0") {
-            const powerBI = prompt("Digite o PowerBI desejado (dfv_rse, dfv_rnn, dfv_rcs, dfv_codLOGRADOURO, ofertas, listaTELEFONICA, infoMEI):");
-            if (powerBI === "dfv_rse" || powerBI === "dfv_rnn" || powerBI === "dfv_rcs" || powerBI === "dfv_codLOGRADOURO" || powerBI === "ofertas" || powerBI === "listaTELEFONICA" || powerBI === "infoMEI") {
+            const powerBI = prompt("Digite o PowerBI desejado (dfv_rse, dfv_rnn, dfv_rcs, ofertas, listaTELEFONICA, infoMEI):");
+            if (powerBI === "dfv_rse" || powerBI === "dfv_rnn" || powerBI === "dfv_rcs" || powerBI === "ofertas" || powerBI === "listaTELEFONICA" || powerBI === "infoMEI") {
             const novoLink = prompt("Digite o novo link do PowerBI:");
             } else {
             alert("PowerBI inválido!");
