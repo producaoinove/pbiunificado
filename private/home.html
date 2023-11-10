@@ -94,7 +94,12 @@
         const divs = document.querySelectorAll("div[id^='div_']");
         divs.forEach(div => {
             if (div.id === "div_" + id) {
-                div.style.display = "block";
+                if (div.id === "div_ofertas") {
+                    alert('!Atenção! Houve mudanças no Tipo Venda!! \n Dúvidas, contactar seus supervisores. \n Clique em Ok para continuar... ');
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "block";
+                }
             } else {
                 div.style.display = "none";
             }
