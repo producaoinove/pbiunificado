@@ -5,7 +5,7 @@ function realizarLOGIN() {
         const username = form.username.value;
         const password = form.password.value;
         if ((username === "higor.ruy" && password === "123456") || (username === "producao.inove" && password === "123456") || (username === "jhenyfer.cordeiro" && password === "123456") || (username === "vendas.inove" && password === "123456") || (username === "back.office" && password === "123456")) {
-            alert('SUCESSO NO LOGIN. PRESSIONE OK PARA CONTINUAR!');
+            alert('SUCESSO NO LOGIN. \n !ATENÇÃO! MUDANÇAS NO TIPO VENDA - VAREJO \n PRESSIONE OK PARA CONTINUAR!');
             window.location.href = "private/home.html";
         } else {
             alert('FRACASSO NO LOGIN. PRESSIONE OK PARA TENTAR NOVAMENTE!');
