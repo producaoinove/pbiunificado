@@ -4,7 +4,7 @@ function realizarLOGIN() {
         event.preventDefault();
         const username = form.username.value;
         const password = form.password.value;
-        if ((username === "higor.ruy" && password === "123456") || (username === "producao.inove" && password === "123456") || (username === "jhenyfer.cordeiro" && password === "123456") || (username === "vendas.inove" && password === "123456") || (username === "back.office" && password === "123456")) {
+        if ((username === "higor.ruy" && password === "123456") || (username === "producao.inove" && password === "123456") || (username === "luiz.esquivel" && password === "123456") || (username === "jhenyfer.cordeiro" && password === "123456") || (username === "vendas.inove" && password === "123456") || (username === "back.office" && password === "123456")) {
             alert('SUCESSO NO LOGIN. \n !ATENÇÃO! MUDANÇAS NO TIPO VENDA - deverão seguir pelo Legado! \n PRESSIONE OK PARA CONTINUAR!');
             window.location.href = "private/home.html";
         } else {
