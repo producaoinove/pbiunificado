@@ -29,7 +29,7 @@ form {
     width: 300px;
     margin: 0 auto;
 }
-input[type=text], input[type=password] {
+input[type=text], input[type=password], select[type=motivo] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;

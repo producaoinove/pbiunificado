@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PowerBI - UNIFICADO</title>
+        <link rel="shortcut icon" href="../assets/img/inove.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="../assets/styles/stylesCARREGAMENTO.css">
+        <link rel="stylesheet" href="../assets/styles/stylesGERAIS.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+    </head>
+    <div class="fullscreen-lottie loading" id="lottie-container">
+        <h3>FAVOR AGUARDE ENQUANTO FAZEMOS ALGUNS TESTES...</h3>
+    </div>
+    <body>
+        <header id="nome">
+            <nav>
+                <a onclick="mostrarDiv('rv')" id="rv" class="naoatual" style="margin-left: 6px;" title="IR PRA RELATORIO DE VENDAS" href="#"> RV </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a onclick="mostrarDiv('mvi')" id="mvi" class="naoatual" title="IR PRA DFV MVI" href="#"> MVI </a> <br>
+                <a id="privado" class="privado" title="IR PRA SESSÃO ADMINISTRATIVA" href="#" onclick="exibirFormulario()"> ADMINISTRATIVO </a>&nbsp;&nbsp;&nbsp;
+                <a id="sair" class="sair" title="IR PRA SESSÃO ADMINISTRATIVA" href="../index.html"> SAIR </a>
+            </nav>
+        </header>
+        <main>
+            <div id="div_central">
+                <h3>PowerBI - UNIFICADO</h3>
+                <p style="margin-left: 50px;">Lugar centralizado do Marketing ChatX</p> <br>
+                <p class="texto">RV >> é o relatório de vendas</p> <br>
+                <p class="texto">MVI >> é o Método de Vendas Inove </p>
+            </div>
+            <div id="div_rv">
+                <p>
+                Atual: RV
+                </p>
+                <iframe title="dfv_rv" src="https://app.powerbi.com/view?r=eyJrIjoiYjY2NWYyYjAtZjk5NS00ZTAyLWEzMjgtM2ZmZjU2MTVmNTA3IiwidCI6ImI2MGFjM2UwLTczNGYtNDYwNC04ZmU4LTcwNWY0NGQzNDU4ZCJ9" id="dfv_rv" width="100%" height="800px" frameborder="0" allowfullscreen="true"></iframe>
+            </div> 
+            <div id="div_mvi">
+                <p>
+                Atual: MVI 
+                </p>
+                <embed title="dfv_mvi" src="../assets/doc/MVI.pdf" id="dfv_mvi" width="100%" height="800px">
+            </div>
+        </main>
+        <footer>
+            <p> &copy; PRODUZIDO POR PRODUÇÃO INOVE </p>
+        </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const centralDiv = document.getElementById("div_central");
+        centralDiv.style.display = "block";
+    });
+    function mostrarDiv(id) {
+        const divs = document.querySelectorAll("div[id^='div_']");
+        divs.forEach(div => {
+            if (div.id === "div_" + id) {
+                if (div.id === "div_ofertas") {
+                    alert('!Atenção! Houve mudanças no Tipo Venda!! - todas seguirão pelo LEGADO \n Dúvidas, contactar seus supervisores. \n Clique em Ok para continuar... ');
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "block";
+                }
+            } else {
+                div.style.display = "none";
+            }
+        });
+    };
+    function exibirFormulario() {
+        const login = prompt("Digite o login:");
+        if (login === "producao.inove") {
+        const senha = prompt("Digite a senha:");
+        if (senha === "Produc@0") {
+            const powerBI = prompt("Digite o PowerBI desejado (dfv_rse, dfv_rnn, dfv_rcs, ofertas, listaTELEFONICA, infoMEI):");
+            if (powerBI === "dfv_rse" || powerBI === "dfv_rnn" || powerBI === "dfv_rcs" || powerBI === "ofertas" || powerBI === "listaTELEFONICA" || powerBI === "infoMEI") {
+            const novoLink = prompt("Digite o novo link do PowerBI:");
+            } else {
+            alert("PowerBI inválido!");
+            }
+        } else {
+            alert("Senha incorreta!");
+        }
+        } else {
+        alert("Login incorreto!");
+        }
+    };
+    var lottieContainer = document.querySelector("#lottie-container");
+    var animation = bodymovin.loadAnimation({
+        container: lottieContainer,
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "../assets/img/animation1701280420984.json",
+    });
+    </script>
+    <script src="../assets/script/scriptvalidador.js">
+        if (localStorage.getItem('primeiroAcesso') === null) {
+            if (window.location.pathname !== '/index.html') {
+                window.location.href = 'index.html';
+            }
+            localStorage.setItem('primeiroAcesso', 'true');
+        }
+    </script>
+    <script src="../assets/script/scriptcarregamento.js"></script>
+    </body>
+</html>

@@ -17,6 +17,10 @@ a.privado {
     background-color: yellow;
 }
 
+a.sair {
+    background-color: red;
+}
+
 li {
     list-style: none;
 }
