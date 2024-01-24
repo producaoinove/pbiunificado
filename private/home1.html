@@ -41,6 +41,9 @@
                 Atual: DFV - RSE
                 </p>
                 <iframe title="dfv_rse" src="https://app.powerbi.com/view?r=eyJrIjoiZWQ5ZjA0YTktN2Q4Zi00NGRkLWFjMGItYTllODUyMTI0NDYzIiwidCI6IjljZTY2NzI4LThmZmQtNDEzNS1hZTFkLTNiMmUyNjVlMjhlOSJ9" id="dfv_rse" width="100%" height="800px" frameborder="0" allowfullscreen="true"></iframe>
+                <!-- <div class="lottie" id="lottie-container-manutencao">
+                    <h3>FAVOR AGUARDE ENQUANTO FAZEMOS ALGUNS TESTES...</h3>
+                </div> -->
             </div> 
             <div id="div_rnn">
                 <p>
@@ -48,6 +51,9 @@
                 Instrução: USER: "1050293" >> SENHA1: "745" >> SENHA2: "856" >> VALIDAR >> ENTRAR
                 </p>
                 <iframe title="dfv_rnn" src="https://app.powerbi.com/view?r=eyJrIjoiYmI4YzkzNDEtNjk1NC00YTJkLWJkYjgtNDA3ZDk2Y2U0NjE4IiwidCI6IjA2Y2IwNGM2LTAwNDktNDNlZC04YWNiLTQ1YWFmNTk0NDRiZCJ9" id="dfv_rnn" width="100%" height="800px" frameborder="0" allowfullscreen="true"></iframe>
+                <!-- <div class="lottie" id="lottie-container-manutencao">
+                    <h3>FAVOR AGUARDE ENQUANTO FAZEMOS ALGUNS TESTES...</h3>
+                </div> -->
             </div>
             <div id="div_rcs">
                 <p>
@@ -55,24 +61,36 @@
                 Instrução: USER: "PARCEIRO" >> SENHA1: "6253" >> SENHA2: "7981" >> "Entrar"
                 </p>
                 <iframe title="dfv_rcs" src="https://app.powerbi.com/view?r=eyJrIjoiZDdkMzQ4MTYtYjJmNi00ZmEzLWI5M2QtZTQzYTEzMjU0OGM4IiwidCI6IjllN2M3ZGNmLTEwMmUtNDU4ZS05MTczLTk5OWFjYTU5NjRkNSJ9" id="dfv_rcs" width="100%" height="800px" frameborder="0" allowfullscreen="true"></iframe>
+                <!-- <div class="lottie" id="lottie-container-manutencao">
+                    <h3>FAVOR AGUARDE ENQUANTO FAZEMOS ALGUNS TESTES...</h3>
+                </div> -->
             </div>
             <div id="div_ofertas">
                 <p>
                 Atual: POWERBI - OFERTAS
                 </p>
                 <iframe title="ofertas" src="https://app.powerbi.com/view?r=eyJrIjoiNDI3ZTVhZGItODM1Mi00MmNiLTk1N2ItZWIyYjIxMGY4OTgzIiwidCI6ImI2MGFjM2UwLTczNGYtNDYwNC04ZmU4LTcwNWY0NGQzNDU4ZCJ9" id="ofertas" width="100%" height="800px" frameborder="0" allowfullscreen="true"></iframe>
+                <!-- <div class="lottie" id="lottie-container-manutencao">
+                    <h3>FAVOR AGUARDE ENQUANTO FAZEMOS ALGUNS TESTES...</h3>
+                </div> -->
             </div>
             <div id="div_listaTELEFONICA">
                 <p>
                 Atual: POWERBI - LISTA TELEFÔNICA
                 </p>
-                <iframe title="listaTELEFONICA" id="listaTELEFONICA" width="100%" height="800px" src="https://app.powerbi.com/view?r=eyJrIjoiYTA1MTg3MGEtZWE0OC00ZjcwLTgxOGMtNDI5YzZlYTllZTcwIiwidCI6ImI2MGFjM2UwLTczNGYtNDYwNC04ZmU4LTcwNWY0NGQzNDU4ZCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                <!-- <iframe title="listaTELEFONICA" id="listaTELEFONICA" width="100%" height="800px" src="https://app.powerbi.com/view?r=eyJrIjoiYTA1MTg3MGEtZWE0OC00ZjcwLTgxOGMtNDI5YzZlYTllZTcwIiwidCI6ImI2MGFjM2UwLTczNGYtNDYwNC04ZmU4LTcwNWY0NGQzNDU4ZCJ9" frameborder="0" allowFullScreen="true"></iframe> -->
+                <div class="lottie" id="lottie-container-manutencao">
+                    <h3>FAVOR AGUARDE ENQUANTO FAZEMOS ALGUNS TESTES...</h3>
+                </div>
             </div>
             <div id="div_infoMEI">
                 <p>
                 Atual: POWERBI - INFORMAÇÃO DE MEI
                 </p>
                 <iframe title="INFOMEI" id="INFOMEI" width="100%" height="800px" src="https://app.powerbi.com/view?r=eyJrIjoiZWIwMGQ3YWYtZTM0Ni00MmIxLWFhODQtNmZjMTM3OTdiZjBiIiwidCI6ImI2MGFjM2UwLTczNGYtNDYwNC04ZmU4LTcwNWY0NGQzNDU4ZCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                <!-- <div class="lottie" id="lottie-container-manutencao">
+                    <h3>FAVOR AGUARDE ENQUANTO FAZEMOS ALGUNS TESTES...</h3>
+                </div> -->
             </div>
         </main>
         <footer>
@@ -122,6 +140,14 @@
         loop: true,
         autoplay: true,
         path: "../assets/img/animation_lnuph630.json",
+    });
+    var lottieContainer = document.querySelector("#lottie-container-manutencao");
+    var animation = bodymovin.loadAnimation({
+        container: lottieContainer,
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "../assets/img/Animation1706121592831.json",
     });
     </script>
     <script src="../assets/script/scriptvalidador.js">

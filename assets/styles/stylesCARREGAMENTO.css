@@ -22,3 +22,11 @@
     width: 800px;
     font-size: 18px;
 }
+.lottie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 80%;
+    animation: fadeInOut linear 5s;
+}
