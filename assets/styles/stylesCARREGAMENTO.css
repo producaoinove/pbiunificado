@@ -22,6 +22,9 @@
     width: 800px;
     font-size: 18px;
 }
+#lottie-container h3{
+    padding-bottom: 100px;
+}
 .lottie {
     display: flex;
     justify-content: center;
