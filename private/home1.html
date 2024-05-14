@@ -18,7 +18,8 @@
             <nav>
                 <a onclick="mostrarDiv('rse')" id="rse" class="naoatual" style="margin-left: 6px;" title="IR PRA DFV RSE" href="#"> DFV RSE </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a onclick="mostrarDiv('rnn')" id="rnn" class="naoatual" title="IR PRA DFV RNN" href="#"> DFV RNN </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a onclick="mostrarDiv('rcs')"  id="rcs" class="naoatual" title="IR PRA DFV RCS" href="#"> DFV RCS </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a onclick="mostrarDiv('rcsco')"  id="rcs" class="naoatual" title="IR PRA DFV RCS" href="#"> DFV RCS: CENTRO-OESTE </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a onclick="mostrarDiv('rcssul')"  id="rcs" class="naoatual" title="IR PRA DFV RCS" href="#"> DFV RCS: SUL </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a onclick="mostrarDiv('ofertas')"  id="ofertas" class="naoatual" title="IR PRA OFERTAS" href="#"> OFERTAS </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a onclick="mostrarDiv('listaTELEFONICA')"  id="listaTELEFONICA" class="naoatual" title="IR PRA LISTA TELEFÔNICA" href="#"> LISTA TELEFÔNICA </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a onclick="mostrarDiv('infoMEI')"  id="infoMEI" class="naoatual" title="IR PRA INFORMAÇÃO MEI" href="#"> INFO MEI </a> <br>
@@ -32,7 +33,8 @@
                 <p style="margin-left: 50px;">Lugar centralizado dos PowerBI contendo: DFV, Lista Telefônica, InfoMEI e   Ofertas</p> <br>
                 <p class="texto">DFV RSE >> verificar viabilidade para a regional RSE (ES, MG, RJ, SP)</p> <br>
                 <p class="texto">DFV RNN >> verificar viabilidade para a regional RNN (AL, AM, AP, BA, CE, MA, PA, PB, PE, PI, RN, RR, SE)</p> <br>
-                <p class="texto">DFV RCS >> verificar viabilidade para a regional RCS (AC, DF, GO, MS, MT, RO, TO)</p> <br> 
+                <p class="texto">DFV RCS: CENTRO-OESTE  >> verificar viabilidade para a regional RCS: CENTRO-OESTE (AC, DF, GO, MS, MT, RO, TO)</p> <br> 
+                <p class="texto">DFV RCS: SUL >> verificar viabilidade para a regional RCS: CENTRO-OESTE (PR, RS, SC)</p> <br> 
                 <p class="texto">OFERTAS >> ofertas correntes em cada UF e Municipio </p> <br>
                 <p class="texto">LISTA TELEFÔNICA >> puxar dados a partir do CNPJ, Razão Social ou Telefone</p> <br>
             </div>
@@ -55,12 +57,22 @@
                     <h3> FAVOR AGUARDE ESTAMOS REALIZANDO MANUTENCAO </h3>
                 </div> -->
             </div>
-            <div id="div_rcs">
+            <div id="div_rcsco">
                 <p>
-                Atual: DFV - RCS <br>
+                Atual: DFV - CENTRO-OESTE <br>
                 Instrução: USER: "PARCEIRO" >> SENHA1: "6253" >> SENHA2: "7981" >> "Entrar"
                 </p>
                 <iframe title="dfv_rcs" src="https://app.powerbi.com/view?r=eyJrIjoiZDdkMzQ4MTYtYjJmNi00ZmEzLWI5M2QtZTQzYTEzMjU0OGM4IiwidCI6IjllN2M3ZGNmLTEwMmUtNDU4ZS05MTczLTk5OWFjYTU5NjRkNSJ9" id="dfv_rcs" width="100%" height="800px" frameborder="0" allowfullscreen="true"></iframe>
+                <!-- <div class="lottie" id="lottie-container-manutencao">
+                    <h3> FAVOR AGUARDE ESTAMOS REALIZANDO MANUTENCAO </h3>
+                </div> -->
+            </div>
+            <div id="div_rcssul">
+                <p>
+                Atual: DFV - SUL <br>
+                Instrução: USER: "PARCEIRO" >> SENHA1: "6253" >> SENHA2: "7981" >> "Entrar"
+                </p>
+                <iframe title="dfv_rcs" src="https://app.powerbi.com/view?r=eyJrIjoiY2FjMjUxNTktNGMxNS00ODAyLTkwOWMtMDZjMmRhN2U5NTBlIiwidCI6IjllN2M3ZGNmLTEwMmUtNDU4ZS05MTczLTk5OWFjYTU5NjRkNSJ9" id="dfv_rcs" width="100%" height="800px" frameborder="0" allowfullscreen="true"></iframe>
                 <!-- <div class="lottie" id="lottie-container-manutencao">
                     <h3> FAVOR AGUARDE ESTAMOS REALIZANDO MANUTENCAO </h3>
                 </div> -->
@@ -150,14 +162,14 @@
         path: "../assets/img/Animation-1713206760466.json",
     });
     </script>
-    <!-- <script src="../assets/script/scriptvalidador.js">
+    <script src="../assets/script/scriptvalidador.js">
         if (localStorage.getItem('primeiroAcesso') === null) {
             if (window.location.pathname !== '/index.html') {
                 window.location.href = 'index.html';
             }
             localStorage.setItem('primeiroAcesso', 'true');
         }
-    </script> -->
+    </script>
     <script src="../assets/script/scriptcarregamento.js"></script>
     </body>
 </html>
